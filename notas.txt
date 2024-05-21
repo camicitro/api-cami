@@ -99,11 +99,32 @@ REST->(arq)
 * Interfaz uniforme
 * Separacion de conceptos
 	- permite que el cliente y el servidor evolucionen de forma separada
+* Tiene que poder pasarsele de todo pero que devuelva segun lo necesario (tienen que ser robustas, procesar lo que se necesita y no ser exquisitas)
 
 
 
 
 ****
 mirar la documentacion de la libreria zod (ver lo que se le puede poner al atributo)
+
+
+
+****
+Diferencias entre POST PUT y PATCH
+****
+Idempotencia: propiedad de realizar una accion determinada varias veces y aun asi conseguir siempre el msmo resultado que se obtendria al hacerlo una vez
+
+POST:
+	- proposito: crear un nuevo elemento/recurso en el servidor
+	- /movies
+	- NO es idempotente porque siempre se crea un nuevo recurso
+PUT:
+	- proposito: actualizar totalmente un elemento ya existente o crearlo si no existe
+	- /movies/:id
+	- SI es idempotente, porque por mas veces que hagamos la misma solicitud, el resultado siempre sera el mismo
+PATCH:
+	- proposito: actualizar parcialmente un elemento o recurso
+	- /movies/:id
+	- En principio si es idempotente, pero depende (tambien podria pasar en el PUT pero no es tan comun)
 
 

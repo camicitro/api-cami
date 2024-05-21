@@ -12,8 +12,17 @@ POST http://localhost:1234/movies
 Content-Type: application/json
 
 {
+    "sql": "SELECT * FROM users", 
     "title": "Matrix",
     "year": 1999,
     "duration": 120,
     "genre": ["Accion"]
+}
+
+### Actualizar una pelicula con PATCH (actualizar solo una parte)
+PATCH http://localhost:1234/movies/3
+Content-Type: application/json
+
+{
+    "year": 1993
 }
