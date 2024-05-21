@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "Cami <citrocamila06@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }

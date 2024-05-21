@@ -1,9 +1,10 @@
+************************************
 ****** SERVIDOR HTTP CON NODE ******
-
+************************************
 const http = require('node:http')
 
 const server = http.createServer((req, res) => {
-	console.log('request received')
+	console.log('request received:', req.url)
 	res.end('Hola mundo')
 
 })
@@ -14,11 +15,14 @@ server.listen(, () => {
 	console.log(`server listening on port http://localhost:${server.address().port}`)
 })
 
-*tener cuidado si el puerto en el q estoy intentando ya esta en uso***
+**tener cuidado si el puerto en el q estoy intentando ya esta en uso***
 
 
 
+
+************************************
 ******* REQUESTS Y RESPONSES *******
+************************************
 Request:
 	- url
 	- headers: info que va pegada a la peticion para "dar mas contexto"
@@ -29,4 +33,40 @@ Response:
 	- statusCode
 	- body
 	- headers
+
+
+
+*****************************
+**********StatusCode*********
+*****************************
+100-199: Respuestas informativas
+200-299: Respuestas satisfactorias
+300-399: Redirecciones
+400-499: Errores del cliente (algo que haces del lado del cliente)
+500-599: Errores del servidor (algo que se hace del lado del servidor)
+(ver pag http.cat)
+Ej: 
+	200 ok
+	400 bad request
+	404 Not found
+	500 Internal Server Error
+
+
+
+****************************
+********DEPENDENCIAS********
+****************************
+dependencias: 
+	- nodemon --> para ver cambios en tiempo real
+
+
+********************
+
+
+
+
+
+
+
+
 
