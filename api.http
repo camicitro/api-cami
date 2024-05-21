@@ -1,0 +1,19 @@
+### Recuperar todas las peliculas
+GET http://localhost:1234/movies
+
+### Recuperar una pelicula por id
+GET http://localhost:1234/movies/1
+
+### Recuperar todas las películas por un género
+GET http://localhost:1234/movies?genre=Familiar
+
+### Crear una pelicula
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+    "title": "Matrix",
+    "year": 1999,
+    "duration": 120,
+    "genre": ["Accion"]
+}

@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "title": "Enredados" ,
+        "year": 2010,
+        "duration": 120,
+        "genre": ["Familiar", "Fantasia"]
+    },
+    {
+        "id": 2,
+        "title": "Lilo y Stich" ,
+        "year": 2002,
+        "duration": 88,
+        "genre": ["Ciencia Ficcion", "Familiar"]
+    },
+    {
+        "id": 3,
+        "title": "Grandes Heroes" ,
+        "year": 2014,
+        "duration": 102,
+        "genre": ["Ciencia Ficcion", "Familiar"]
+    },
+    {
+        "id": 4,
+        "title": "Zootopia" ,
+        "year": 2022,
+        "duration": 109,
+        "genre": ["Drama Policial", "Familiar"]
+    },
+    {
+        "id": 5,
+        "title": "La sirenita" ,
+        "year": 1989,
+        "duration": 97,
+        "genre": ["Romance", "Familiar"]
+    },
+    {
+        "id": 6,
+        "title": "Aladdin" ,
+        "year": 1992,
+        "duration": 94,
+        "genre": ["Fantasia", "Familiar"]
+    },
+    {
+        "id": 7,
+        "title": "La princesa y el sapo" ,
+        "year": 2009,
+        "duration": 98,
+        "genre": ["Familiar", "Comedia"]
+    },
+    {
+        "id": 8,
+        "title": "El libro de la selva" ,
+        "year": 1967,
+        "duration": 80,
+        "genre": ["Familiar", "Animacion"]
+    }
+]

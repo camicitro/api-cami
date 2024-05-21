@@ -60,13 +60,50 @@ dependencias:
 	- nodemon --> para ver cambios en tiempo real
 
 
-********************
+********************************
+*******BUSCAR E INVESTIGAR******
+********************************
+ver extensiones:
+	- REST cliente
+	- RapidAPI CLient
+	- Thunder client
+Regex & Path-to-regex
 
 
 
 
 
+**********
+node --watch ./app.js --> para levantar la app  
 
 
+
+
+
+**************************
+*********REST API*********
+**************************
+REST->(arq)
+
+*Recursos:
+	- cada recurso se identifica con una url
+*Verbos/Metodos HTTP:
+	- para definir las operaciones que se pueden realizar con los Recursos (operaciones basicas de un CRUD)
+*Representaciones:
+	- JSON
+	- XML
+	- HTML
+	- etc
+* Stateless:
+	- el cliente debe enviar toda la informacion necesaria para procesar la request
+* Interfaz uniforme
+* Separacion de conceptos
+	- permite que el cliente y el servidor evolucionen de forma separada
+
+
+
+
+****
+mirar la documentacion de la libreria zod (ver lo que se le puede poner al atributo)
 
 
