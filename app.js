@@ -29,6 +29,11 @@ app.get('/movies/:id', (req, res) => {
 
 //recuperar todas las peliculas
 app.get('/movies', (req, res) =>{
+    //para que no tire error de cors:
+    res.header('Access-Control-Allow-Origin', '*')
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PARCH, PUT, DELETE')
+    //en vez de poner *, podemos poner el origen a aceptar (http://localhost:1234)
+    
     const {genre} = req.query 
     if(genre){
         const filteredMovies = movies.filter(

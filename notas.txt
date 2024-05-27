@@ -128,3 +128,7 @@ PATCH:
 	- En principio si es idempotente, pero depende (tambien podria pasar en el PUT pero no es tan comun)
 
 
+****
+CORS: (error de uso compartido de recursos entre dominios)
+Es un mecanismo que solo funciona en el navegador. Es un mecanismo que restringe si ese recurso se puede usar en un origen o no.
+El navegador no envia nunca la cabecera de origin cuando la petición es del mismo origin
